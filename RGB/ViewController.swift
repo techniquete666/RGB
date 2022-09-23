@@ -26,26 +26,27 @@ class ViewController: UIViewController {
         greenColorValue.text = greenSlider.value.formatted()
         blueColorValue.text = blueSlider.value.formatted()
         
-        rgbColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(1.0))
-        
+        backgroundChange()
     }
 
     @IBAction func blueColorSliderAction() {
         blueColorValue.text = (round(blueSlider.value * 100) / 100).formatted()
-        rgbColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(1.0))
-
+        backgroundChange()
     }
     
     @IBAction func redColorSliderAction() {
         redColorValue.text = (round(redSlider.value * 100) / 100).formatted()
-        rgbColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(1.0))
-
+        backgroundChange()
     }
     
     @IBAction func greenColorSliderAction() {
         greenColorValue.text = (round(greenSlider.value * 100) / 100).formatted()
+        backgroundChange()
+        
+    }
+    
+    private func backgroundChange() {
         rgbColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(1.0))
-
     }
 }
 
