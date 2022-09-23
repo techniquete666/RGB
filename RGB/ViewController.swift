@@ -26,26 +26,26 @@ class ViewController: UIViewController {
         greenColorValue.text = greenSlider.value.formatted()
         blueColorValue.text = blueSlider.value.formatted()
         
-        backgroundChange()
+        backgroundColorChange()
     }
 
     @IBAction func blueColorSliderAction() {
         blueColorValue.text = (round(blueSlider.value * 100) / 100).formatted()
-        backgroundChange()
+        backgroundColorChange()
     }
     
     @IBAction func redColorSliderAction() {
         redColorValue.text = (round(redSlider.value * 100) / 100).formatted()
-        backgroundChange()
+        backgroundColorChange()
     }
     
     @IBAction func greenColorSliderAction() {
         greenColorValue.text = (round(greenSlider.value * 100) / 100).formatted()
-        backgroundChange()
+        backgroundColorChange()
         
     }
     
-    private func backgroundChange() {
+    private func backgroundColorChange() {
         rgbColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(1.0))
     }
 }
