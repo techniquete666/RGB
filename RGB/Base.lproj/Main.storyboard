@@ -103,7 +103,7 @@
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="backgroundColor" red="0.41969756734927333" green="0.6290662097079831" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="omG-P6-aGe" firstAttribute="top" secondItem="vch-HT-mJN" secondAttribute="bottom" constant="15" id="CAH-ZG-JPY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="omG-P6-aGe" secondAttribute="trailing" constant="16" id="FLE-LX-U9l"/>
@@ -141,9 +141,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
